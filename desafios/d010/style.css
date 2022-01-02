@@ -38,8 +38,7 @@ header{
     padding-top: 20px;
     background-image:linear-gradient(var(--cor2),var(--cor4));
     color: white;
-    text-align: center;
-    height: 100%;
+    text-align: center;   
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
 }
 
