@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Maiores</title>
     <style>
-        th, td{
-            border: 1px solid black;
-            padding: 8px;
-        }
         table{
             width: 600px;
             border-collapse: collapse;
             text-align: center;
         }
-        thead, tfoot{
+        thead, tfoot {
+            background-color: black;
+            color: white;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tbody tr:nth-child(odd){
             background-color: lightgray;
-            color: rgba(0, 0, 0, 0.815);
+        }
+        tbody tr:nth-child(even){
+            background-color: white;
         }
         .number{
             text-align: right;
