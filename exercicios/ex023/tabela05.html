@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Colgroup</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            text-align: center;
+        }
+        th, td{
+            border: 1px solid black;
+            width: 100px;
+            padding: 10px;
+        }
+        .c_nome, .c_sexo{
+            background-color: chartreuse;
+        }
+        .laranja{
+            background-color: orange;
+        }
+        .c_profissao{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exercicio de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="c_nome">
+            <col class="c_sexo">
+            <col class="laranja" span="2">
+            <col class="c_profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>38</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>M</td>
+                <td>41</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>F</td>
+                <td>26</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>Mariana</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Nutricionista</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
